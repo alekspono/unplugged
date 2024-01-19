@@ -87,6 +87,130 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*   HEADER   */
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*   HERO AREA   */
+.hero-area {
+  display: flex;
+  justify-content: center;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*   FEATURES   */
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+/*   REVIEWS   */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.reviews .content-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  FOOTER   */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer .social-icons {
+  display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+footer .social p {
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/*===============================================================================================
+  ABOUT PAGE
+===============================================================================================*/
+
+.mission {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*===============================================================================================
+  FAQ PAGE
+  ===============================================================================================*/
+
+.faq {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.faq .content-wrapper {
+  display: flex;
+justify-content: center;
+align-items: flex start;
+flex-flow: row wrap;
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
