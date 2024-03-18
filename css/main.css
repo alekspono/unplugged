@@ -508,6 +508,7 @@ footer .copyright {
 .reviews article {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .reviews article div {
@@ -538,7 +539,7 @@ footer .copyright {
 }
 
 
-/* ABOUT Page */
+
 
 .mission-content {
   display: flex;
@@ -565,6 +566,12 @@ flex-wrap: wrap;
   align-items: flex-start;
 }
 
+/* ABOUT Page */
+
+.mission h2,
+.contect-section .content-wrapper h2 {
+  width: 95%;
+}
 
 /* FAQ Page*/
 .faq .content-wrapper {
@@ -584,27 +591,54 @@ flex-wrap: wrap;
   /* Desktop styles here */
 
   /* General Styles */
-
+.content-wrapper {
+  max-width: 960px;
+}
   /* Header */
 
+  header {
+    padding: 15px 0;
+  }
+
   /*Hero Area */
+ 
+  .hero-area h1 {
+  width: 70%;
+ }
 
   /* Aside */
+aside .content-wrapper {
+  justify-content: space-around;
+}
 
+aside .content-wrapper .form {
+width: 30%;
+}
 
 
   /* Features */
-
-
+  .features h2 {
+    width: 90%;
+  }
+  
+  .features article {
+    flex-basis: 33%;
+    }
 
   /* Reviews */
-
-
+.reviews h2 {
+  padding-bottom: 50px;
+}
+.reviews article div {
+  width: 42%;
+}
   /* Footer */
 
 
   /* FAQ Page*/
-
+  .faq-content {
+    flex-basis: 49%;
+  }
 }
 
 /* ==========================================================================
