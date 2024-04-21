@@ -97,6 +97,7 @@ body {
  
  font-family: 'Open Sans', sans-serif;
 font-size: 1em;
+color: #e2e3ed;
 }
  
 ul, 
@@ -107,6 +108,12 @@ ol {
 a {
 	color: #e2e3ed;
   text-decoration: none;
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 43px;
+  font-weight: 500;
 }
  
 h2 {
@@ -119,11 +126,13 @@ h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.13em;
+  font-weight: 500;
 }
  
 p {
 	font-size: 0.875em;
-  line-height: 1.125em;;
+  line-height: 18px;
+  
 }
  
 img {
@@ -155,6 +164,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -174,8 +184,9 @@ header .content-wrapper {
 
 header h1 {
   font-size: 2.25em;
-  line-height: 2.68em;
+  line-height: 42px;
   font-weight: 500;
+  color: #e2e3ed;
 }
 
 header nav {
@@ -201,12 +212,14 @@ ul {
 .hero-area {
   display: flex;
   justify-content: center;
+  
 
 }
 
 aside {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 
@@ -221,6 +234,11 @@ aside h3 {
 
 aside p {
   margin-bottom: 30px;
+}
+
+aside input {
+  font-size: 1.125em;
+  font-weight: 500;
 }
 
 /*   FEATURES   */
@@ -274,7 +292,7 @@ article .content-wrapper {
 .reviews {
   display: flex;
   justify-content: center;
-
+  background-color: #2a423a;
 }
 
 /*
@@ -289,7 +307,7 @@ article .content-wrapper {
 
 .reviews h2 {
   margin-bottom: 40px;
-  line-height: 1.875em;
+  line-height: 30px;
 }
 
 .reviews h3 {
@@ -304,6 +322,7 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #202322;
 }
 
 footer .content-wrapper {
@@ -317,12 +336,15 @@ footer .social-icons {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 50px;
+  font-size: 1.313em;
 }
 
 footer .social p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+
 }
 
 footer h4 {
@@ -354,11 +376,15 @@ footer .copyright {
 .mission {
   display: flex;
   justify-content: center;
+  background-color: #527158;
+
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
+
 }
 
 .contact-content p {
@@ -373,6 +399,8 @@ footer .copyright {
 .faq {
   display: flex;
   justify-content: center;
+  background-color: #527158;
+
 }
 
 .faq .content-wrapper {
@@ -380,11 +408,12 @@ footer .copyright {
   justify-content: center;
   align-items: flex start;
   flex-flow: row wrap;
+
 }
 
 .faq h2 {
   margin-bottom: 40px;
-  line-height: 1.875em;
+  line-height: 30px;
 }
 
 .faq-content {
@@ -392,7 +421,7 @@ footer .copyright {
 }
 
 .faq-content h4{
-line-height: 1.5em;
+line-height: 24px;
 }
 /* ==========================================================================
    Helper classes
@@ -476,6 +505,32 @@ line-height: 1.5em;
   clear: both;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -486,7 +541,7 @@ line-height: 1.5em;
   /* Tablet styles here */
 h1 {
   font-size: 3em;
-    line-height: 3em;
+    line-height: 48px;
 }
   /* General Styles */
   .content-wrapper {
@@ -496,20 +551,18 @@ h1 {
 
   h2 {
     font-size: 2.25em;
-    line-height: 3em;
+    line-height: 48px;
   }
 
   h3 {
-    line-height: 1.875em;
-  }
-
-  h3, h4 {
     font-size: 1.5em;
-   
+    line-height: 30px;
   }
 
+  
 p {
 font-size: 1.125em;
+line-height: 18px;
 }
 
   /* Header */
@@ -638,7 +691,7 @@ footer .copyright {
 }
 
 footer p {
-  line-height: 1.125em;
+  line-height: 18px;
 }
 
 
@@ -687,9 +740,9 @@ flex-wrap: wrap;
   width: 100%;
 }
 
-faq h4, p {
+.faq h4, p {
   font-size: .875em;
-  line-height: 0.98em;
+  line-height: 15.75px;
 }
 }
 
@@ -704,6 +757,10 @@ faq h4, p {
   /* General Styles */
 .content-wrapper {
   max-width: 960px;
+}
+
+h2 {
+  font-size: 36px;
 }
 
 
@@ -769,11 +826,12 @@ width: 30%;
 
   .faq h4, p {
     font-size: 1.125em;
-    line-height: 1.125em;
+    line-height: 18px;
   }
 
   .faq p {
-    line-height: 1.5em;
+    font-size: 1.125em;
+    line-height: 24px;
   }
 }
 
