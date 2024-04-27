@@ -142,12 +142,12 @@ address {}
 .content-wrapper {}
 
 
-img { 
-	width: 100%;
+img {
+  width: 100%;
 }
- 
+
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 
@@ -302,6 +302,11 @@ article .content-wrapper {
   margin-bottom: 60px;
 }
 
+.features i {
+  font-size: 0.75em;
+  margin-bottom: 40px;
+}
+
 
 /*   REVIEWS   */
 
@@ -313,17 +318,17 @@ article .content-wrapper {
 
 
 
-.reviews .content-wrapper{
+.reviews .content-wrapper {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
   align-items: center;
   margin: 50px 0;
-  
+
 }
 
 .reviews article {
-  width: 49%;
+  width: 100%;
 }
 
 .reviews h2 {
@@ -333,13 +338,13 @@ article .content-wrapper {
 }
 
 .reviews h3 {
-  width: 55%;
-  margin: 20px 0;
+ margin: 20px 0;
 }
 
 .reviews figure {
- width: 49%; 
+  width: 100%;
 }
+
 
 /*  FOOTER   */
 
@@ -442,11 +447,11 @@ header figure {
   FAQ PAGE
   ===============================================================================================*/
 
-  header figure {
-    width: 60%;
-  }
+header figure {
+  width: 60%;
+}
 
-  .faq {
+.faq {
   display: flex;
   justify-content: center;
   background-color: #527158;
@@ -639,9 +644,7 @@ input[type=button] {
 
   }
 
-  header nav ul {
-    
-  }
+  header nav ul {}
 
 
   .header-divider {
@@ -704,6 +707,7 @@ input[type=button] {
 
 
 
+ 
   /* Reviews */
 
   .reviews .content-wrapper {
@@ -720,7 +724,11 @@ input[type=button] {
     flex-wrap: wrap;
   }
 
-  .reviews article div {
+  .reviews article {
+    width: 49%;
+  }
+
+  .reviews figure {
     width: 49%;
   }
 
@@ -877,7 +885,7 @@ input[type=button] {
     padding-bottom: 50px;
   }
 
-  .reviews article div {
+  .reviews article {
     width: 42%;
   }
 
@@ -891,6 +899,7 @@ input[type=button] {
   .map figure {
     padding-bottom: 37.5%
   }
+
   /* FAQ Page*/
   .faq-content {
     flex-basis: 49%;
