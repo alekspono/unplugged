@@ -139,7 +139,10 @@ figure {}
 
 address {}
 
-.content-wrapper {}
+.content-wrapper {
+  width: 90%;
+  margin: 0px 0;
+}
 
 
 img {
@@ -198,8 +201,7 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
-  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -811,9 +813,9 @@ input[type=button] {
 
   /* ABOUT Page */
 
-  .mission h2,
+  .mission-content h2,
   .contact-section .content-wrapper h2 {
-    width: 95%;
+    width: 100%;
   }
 
   header figure {
